@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>YLAD</id>
+    <version>$Version$</version>
+    <title>Your Last About Dialog</title>
+    <authors>Peter Kuhn, Jim Ownby</authors>
+    <owners>Peter Kuhn<owners>
+    <licenseUrl>http://www.opensource.org/licenses/MS-PL</licenseUrl>
+    <projectUrl>https://github.com/bishopsmove/YLAD.UWP</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Are you tired of recreating the same about dialog logic and content for each Windows Phone app every time? "Your Last About Dialog" is a robust and generic, highly configurable implementation you can easily pull into your own app and set up for your needs. It is able to pull most data from your application automatically, supports fetching both text and Xaml content from remote sources (with fallback local content), and allows styling as well as localization of the complete dialog content to all of the languages supported by your app.
+        This package is based off the original work by Peter Kuhn, which targeted the WP71 and Windows Phone 8 OS's.</description>
+    <summary>A generic, configurable and localizable about dialog implementation for UWP apps.</summary>
+    <tags>UWP, Universal Windows Platform, About dialog</tags>
+  </metadata>
+<files>    
+ <file src="..\Sources\YLAD\YourLastAboutDialog\bin\Release\YourLastAboutDialog.xml" target="lib\uwp\YourLastAboutDialog.xml" />
+ <file src="..\Sources\YLAD\YourLastAboutDialog\bin\Release\YourLastAboutDialog.dll" target="lib\uwp\YourLastAboutDialog.dll" />
+ 
+ <file src="Data\readme.txt" target="readme.txt" />
+ 
+ <file src="Data\content\uwp\Content\About\Data.xml" target="content\uwp\Content\About\Data.xml" />
+ <file src="Data\content\uwp\Content\About\AboutStyles.xaml" target="content\uwp\Content\About\AboutStyles.xaml" />
+ 
+ <file src="Data\tools\Install.ps1" target="tools\Install.ps1" />
+</files>
+</package>
